@@ -45,3 +45,24 @@ console.log(sanjeevOlder);
     //typeof
 console.log(typeof sanjeevOlder);
 console.log(typeof ageSanjeev)
+
+//OPERATOR PRECEDENCE
+var now = 2020;
+var yearSanjeev = 1984;
+var fullAge = 21;
+var isFullAge = now - yearSanjeev >= fullAge;
+console.log(isFullAge); 
+
+var ageSanjeev = now - yearSanjeev;
+var ageShanti = 34;
+var average = (ageSanjeev + ageShanti) / 2;
+console.log(average);
+
+var x = 2;
+x = x * 2;
+console.log(x);
+x *= 2;
+console.log(x);
+var y = 3;
+y = y + 3;
+y += 3;

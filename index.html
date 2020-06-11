@@ -54,6 +54,24 @@
             <p class="notes">console.log(sanjeevOlder); &rarr; logic operator</p>
             <p class="notes">console.log(typeof sanjeevOlder) &rarr; typeof operator</p>
             <p class="notes">console.log(typeof ageSanjeev) &rarr; typeof operator</p>
+            <br>
+            <p>OPERATOR PRECEDENCE</p>
+            <p class="notes">var now = 2020;</p>
+            <p class="notes">var yearSanjeev = 1984;</p>
+            <p class="notes">var fullAge = 21;</p>
+            <p class="notes">var isFullAge = now - yearSanjeev >= fullAge;</p>
+            <p class="notes">console.log(isFullAge);</p>
+            <p class="notes">*above line logs 35, the '-' operator has precedence over the '>=', so it goes first, then the comparison comes after*</p>
+            <p class="notes">var ageSanjeev = now - yearSanjeev;</p>
+            <p class="notes">var ageShanti = 34;</p>
+            <p class="notes">var average = (ageSanjeev + ageShanti) / 2;</p>
+            <p class="notes">console.log(average);</p>
+            <p class="notes">*above log prints 35, parenthesis allow first order precedence, then the division comes after*</p>
+            <p class="notes">*Jonas page as link to Mozilla javascript operator precedence table*</p>
+            <p class="notes">var x = 2;</p>
+            <p class="notes">x = x + 2 / x += 2 is the same, better way to code.</p>
+            <p class="notes">var y = 3;</p>
+            <p class="notes">y = y * 3 / y *= 3 is the same, better way to code.</p>
         </div>
     </div>
 
