@@ -169,4 +169,6 @@ if (johnAverage > mikeAverage && johnAverage > maryAverage) {
     console.log('Mike\'s team has the highest average, with ' + mikeAverage + ' points.');
 } else if (maryAverage > johnAverage && maryAverage > mikeAverage) {
     console.log('Mary\'s team has the highest average, with ' + maryAverage + ' points.');
+} else {
+    console.log('There seems to be a draw.');
 }
