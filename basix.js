@@ -1,3 +1,4 @@
+console.log('JONAS INTRODUCTION');
 //BASIC VARIABLES: DECLARATIONS, TYPES
 console.log('6/11, 10:00AM. Starting with the Jonas beginning.');
 
@@ -146,7 +147,7 @@ switch (true) {
         console.log(firstName + ' is a teenager.');
         break;
     default:
-        console.log(firstName + ' is a man.');
+        console.log(firstName + ' is a man.'); 
 }
 
 //TRUTHY AND FALSY VALUES
@@ -172,3 +173,25 @@ if (johnAverage > mikeAverage && johnAverage > maryAverage) {
 } else {
     console.log('There seems to be a draw.');
 }
+console.log('================================================');
+console.log('================================================');
+console.log('COLT INTRODUCTION');
+var x = 10 % 3;
+console.log(x);
+var name = 'Sanjeev';
+console.log(name.length)
+console.log('Sanjeev'.length);
+//colt coding challenge 1
+/*
+var firstName = prompt('What\'s your first name?');
+var lastName = prompt('What\'s your last name?');
+var age = prompt('How old are you?');
+console.log(firstName, lastName);
+console.log(age);
+alert('Hello ' + firstName + ' ' + lastName + '. What\'s it like being ' + age + ' years old?');
+
+//age calculator
+var age = prompt('How old are you?');
+var calculator = age * 365.25;
+alert('You are ' + calculator + ' days old.');
+*/
