@@ -195,3 +195,86 @@ var age = prompt('How old are you?');
 var calculator = age * 365.25;
 alert('You are ' + calculator + ' days old.');
 */
+console.log('================================================');
+console.log('================================================');
+console.log('JONAS FUNCTIONS');
+
+function calculateAge(birthYear) {
+    return 2020 - birthYear;
+}
+
+var ageSanjeev = calculateAge(1984);
+var ageKamal = calculateAge(1948);
+var ageAlice = calculateAge(1951);
+console.log(ageSanjeev, ageKamal, ageAlice);
+
+function yearsUntilRetirement(year, firstName) {
+    var age = calculateAge(year);
+    var retirement = 65 - age;
+    if (retirement > 0) {
+        console.log(firstName + ' retires in ' + retirement + ' years.');
+    } else {
+        console.log(firstName + ' is already retired.');
+    }
+    
+}
+
+yearsUntilRetirement(1984, 'Sanjeev');
+yearsUntilRetirement(1948, 'Kamal');
+
+var whatDoYouDo = function(job, firstName) {
+    switch(job) {
+        case 'teacher':
+            return firstName + ' teaches kids how to code.';
+        case 'driver':
+            return firstName + ' drives an Uber.';
+        case 'designer':
+            return firstName + ' designs beautiful pools.';
+        default:
+            return firstName + ' does something else.';
+    }
+}
+
+console.log(whatDoYouDo('fighter', 'Ellis'));
+console.log(whatDoYouDo('teacher', 'Mark'));
+console.log(whatDoYouDo('designer', 'Junebug'));
+console.log('================================================');
+console.log('================================================');
+console.log('ARRAYS JONAS');
+var names = ['Sanjeev', 'Sanjay', 'Shanti'];
+var years = new Array(1984, 1980, 1985);
+console.log(names[2]);
+console.log(names.length);
+//Array Mutation
+names[1] = 'Ben';
+names[names.length] = 'Mary';
+console.log(names);
+//Array with different data types
+var sanjeev = ['Sanjeev', 'Chadeesingh', 1984, 'coder', false];
+sanjeev.push('mixed');
+sanjeev.unshift('male');
+console.log(sanjeev);
+console.log(sanjeev.indexOf('happy'));
+//Array logic
+var isDesigner = sanjeev.indexOf('designer') === -1 ? 'Sanjeev is not a designer.' : 'Sanjeev is a designer.';
+console.log(isDesigner);
+//Coding Challenge 2
+var bills = [124, 48, 268];
+
+function tipCalc(bill) {
+    var tip;
+    if (bill < 50) {
+       return tip = bill * .2;
+    } else if (bill >= 50 && bill < 200) {
+        return tip = bill * .15;
+    } else {
+        return tip = bill * .1;
+    }
+};
+
+var test = tipCalc(100);
+console.log(test);
+var tips = [tipCalc(bills[0]), tipCalc(bills[1]), tipCalc(bills[2])];
+var totals = [(tipCalc(bills[0])) + bills[0], (tipCalc(bills[1])) + bills[1], (tipCalc(bills[2])) + bills[2]]
+console.log('Tips: ' + tips);
+console.log('Totals: ' + totals);
