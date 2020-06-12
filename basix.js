@@ -260,7 +260,7 @@ var isDesigner = sanjeev.indexOf('designer') === -1 ? 'Sanjeev is not a designer
 console.log(isDesigner);
 //Coding Challenge 2
 var bills = [124, 48, 268];
-
+ 
 function tipCalc(bill) {
     var tip;
     if (bill < 50) {
