@@ -42,6 +42,14 @@ body {
     color: white;
 }
 
+.white {
+    color: white;
+}
+
+.yellow {
+    color: yellow;
+}
+
 .june11 {
     border: 1px solid rgb(1, 179, 1);
     padding: 10px;
@@ -49,6 +57,18 @@ body {
 }
 
 .june12 {
+    border: 1px solid rgb(1, 179, 1);
+    padding: 10px;
+    line-height: 2;
+}
+
+.june17 {
+    border: 1px solid rgb(1, 179, 1);
+    padding: 10px;
+    line-height: 2;
+}
+
+.june18 {
     border: 1px solid rgb(1, 179, 1);
     padding: 10px;
     line-height: 2;

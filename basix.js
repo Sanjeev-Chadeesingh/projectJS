@@ -278,3 +278,170 @@ var tips = [tipCalc(bills[0]), tipCalc(bills[1]), tipCalc(bills[2])];
 var totals = [(tipCalc(bills[0])) + bills[0], (tipCalc(bills[1])) + bills[1], (tipCalc(bills[2])) + bills[2]]
 console.log('Tips: ' + tips);
 console.log('Totals: ' + totals);
+
+console.log('================================================');
+console.log('================================================');
+console.log('CONTROL FLOW COLT');
+var x = 'Hiyah!';
+console.log(!!x);
+console.log('Conditionals:');
+
+var age = 36;
+
+if (age < 0) {
+    console.log('Error!');
+} else if (age == 21) {
+    console.log('Happy birthday!! First drink is free!');
+} else if (age % 2 === 1) {
+    console.log('Your age is odd!');
+} else if (age % Math.sqrt(age) === 0) {
+    console.log('Your age is a perfect square.');
+} 
+console.log('GUESSING GAME');
+var secretNumber = 5;
+//var guess = Number(prompt('Guess a number 1-10'));
+// alert('You guessed ' + guess);
+// if (guess === secretNumber) {
+//     alert('Good guess!');
+// } else {
+//     alert('Incorrect! Try again!');
+// }
+//guess === secretNumber ? alert('Good guess!') : alert('Incorrect!');
+console.log('WHILE LOOPS');
+console.log('================================================');
+// var count = 1;
+
+// while(count <= 10) {
+//     console.log('Counter is at ' + count);
+//     count++;
+// }
+
+// var str = 'hello';
+// var count = 0;
+// while(count < str.length) {
+//     console.log(str[count]);
+//     count++;
+// }
+var countOne = -10;
+while(countOne <= 19) {
+    console.log('Count: ' + countOne);
+    countOne++;
+}
+
+var countTwo = 10;
+while(countTwo <= 40) {
+    if(countTwo % 2 === 0) {
+        console.log('Count is ' + countTwo);
+    }
+    countTwo++;
+}
+
+var countThree = 300;
+while(countThree <= 333) {
+    if(countThree % 2 === 1) {
+        console.log('Count is: ' + countThree);
+    }
+    countThree++;
+}
+
+var countFour = 5;
+while(countFour <= 50) {
+    if(countFour % 3 === 0 && countFour % 5 === 0) {
+        console.log('Count is: ' + countFour);
+    }
+    countFour++;
+}
+console.log('Annoyomatic');
+// var query = prompt('Are we there yet?');
+// while(query !== 'yes' && query !== 'yeah') {
+//     var query = prompt('Are we there yet?');
+// }
+// alert('Yay! We are here!');
+// while(query.indexOf('yes') === -1) {
+//     var query = prompt('Are we there yet?');
+// }
+// alert('We made it!');
+console.log('For loops');
+console.log('================================================');
+for(var i = 0; i < 10; i++) {
+    console.log('I am number ' + i);
+}
+
+for(var i = -10; i < 20; i++) {
+    console.log(i);
+}
+
+for(var i = 10; i < 41; i++) {
+    if(i % 2 === 0) {
+        console.log(i);
+    }
+}
+
+for(var i = 300; i < 334; i++) {
+    if(i % 2 !== 0) {
+        console.log(i);
+    }
+}
+
+for(var i = 5; i < 51; i++) {
+    if(i % 3 === 0 && i % 5 === 0) {
+        console.log(i);
+    }
+}
+
+console.log('================================================');
+console.log('================================================');
+console.log('FUNCTIONS COLT');
+function doSomething() {
+    console.log('Hiyah There!');
+};
+doSomething();
+console.log('Function declarations with args');
+function sayHello(name) {
+    console.log('Hello there, ' + name);
+};
+sayHello('Sanjeev');
+
+function sayHelloAlot(name1, name2, name3) {
+    console.log('Hello ' + name1);
+    console.log('Hello ' + name2);
+    console.log('Hello ' + name3);
+};
+sayHelloAlot('Sanjeev', 'Lloyd', 'Brian');
+console.log('Return keyword and functions');
+
+function pewPew(x) {
+    return x * x;
+}
+console.log(pewPew(7));
+console.log('Simple function declaration with a returned value');
+function capitalize(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+var city = 'paris';
+var properCity = capitalize(city);
+console.log(properCity);
+
+console.log('Colt\'s Functions Exercise');
+
+function isEven(num) {
+    if(num % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+var test = isEven(7);
+console.log(test);
+console.log('================================================');
+
+function factorial(num2) {
+    var result = 1;
+    for(var i = 1; i <= num2; i++) {
+       result *= i;
+    }
+    return result;
+};
+console.log(factorial(3));
+// var test2 = factorial(5);
+// console.log(test2);
