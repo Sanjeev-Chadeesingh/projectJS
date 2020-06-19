@@ -50,6 +50,10 @@ body {
     color: yellow;
 }
 
+.pink {
+    color: pink;
+}
+
 .june11 {
     border: 1px solid rgb(1, 179, 1);
     padding: 10px;
@@ -69,6 +73,12 @@ body {
 }
 
 .june18 {
+    border: 1px solid rgb(1, 179, 1);
+    padding: 10px;
+    line-height: 2;
+}
+
+.june19 {
     border: 1px solid rgb(1, 179, 1);
     padding: 10px;
     line-height: 2;

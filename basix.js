@@ -435,13 +435,70 @@ var test = isEven(7);
 console.log(test);
 console.log('================================================');
 
-function factorial(num2) {
-    var result = 1;
-    for(var i = 1; i <= num2; i++) {
-       result *= i;
-    }
-    return result;
-};
-console.log(factorial(3));
+// function factorial(num2) {
+//     var result = 1;
+//     for(var i = 1; i <= num2; i++) {
+//        result *= i;
+//     }
+//     return result;
+// };
+// console.log(factorial(3));
 // var test2 = factorial(5);
 // console.log(test2);
+console.log('Kebab to Snake');
+var exOne = 'hello_world';
+
+function kebabToSnake(str) {
+    var result = str.replace(/-/g, '_');
+    return result;
+}
+
+console.log(kebabToSnake('project-js'));
+
+console.log(kebabToSnake('my-mobile-portfolio-is-very-cool'));
+console.log('================================================');
+console.log('================================================');
+console.log('SCOPE COLT');
+function sing() {
+    console.log('Twinkle twinkle...');
+    console.log('How I wonder');
+}
+//setInterval(sing, 1000);
+//clearInterval(2);
+// console.log('anonymous function below');
+// setInterval(function() {
+//     console.log('I am an anonymous function!!');
+//     console.log('This is awesome!!!');
+// }, 2000);
+
+console.log('================================================');
+console.log('================================================');
+console.log('ARRAYS COLT');
+var friends = ['Charlie', 'Liz', 'David', 'Mattias'];
+friends[4] = 'Amelie';
+console.log(friends);
+
+console.log('Colt Arrays Problem Set');
+var colors = ['red', 'orange', 'yellow'];
+colors[3] = 'green';
+console.log(colors);
+colors.push('purple');
+console.log(colors);
+colors.pop();
+console.log(colors);
+var nums = [34, 54, 22];
+nums.unshift('Hello');
+console.log(nums);
+nums.shift('Hello');
+console.log(nums);
+var fruits = ['banana', 'orange', 'lemon', 'apple', 'mango'];
+var citrus = fruits.slice(1, 3);
+console.log(citrus);
+var nums = [50, 74, 66, 'hello', 'goodbye'];
+var newNums = nums.slice();
+console.log(newNums);
+var strArray = nums.slice(3, 5);
+console.log(strArray);
+var nums = [5, 7, 9, 10, 12];
+console.log(nums[nums.length]);
+console.log('ARRAY ITERATION');

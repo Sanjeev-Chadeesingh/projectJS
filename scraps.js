@@ -20,3 +20,17 @@
 
 // var test = factorialize(5);
 // console.log(test);
+// function doMath() {
+//     var x = 40;
+//     console.log(x);
+// }
+
+// doMath();
+// console.log(x);
+
+// var colors = ['red', 'orange', 'yellow'];
+// colors[3] = 'green';
+//console.log(colors);
+
+// var dogs = ['Rusty', 'Wyatt', 'Ollie'];
+// console.log(dogs.length);

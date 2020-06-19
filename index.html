@@ -236,6 +236,74 @@
             <p>Function Expression</p>
             <p class="notes">Expresses a value, equalifies, equal sign(!)</p>
             <p class="notes">Function expressions are easily malleable due to the simple repurposing of the variable it was named</p>
+            <h2 class="white">takeaways:</h2>
+            <h3 class="white">practice, understand now more about the return keyword thanks to Colt. Function work, keep function working, still with ternary while and for more practice</h3>
+        </div>
+
+        <br> <br> 
+
+        <div class="june19">
+            <h2>June 18th 10:38</h2>
+            <h2>FUNCTIONS cont.</h2>
+            <p class="notes">Did a few exercises &rarr; basix lines 425-461</p>
+            <h2>SCOPE</h2>
+            <p class="notes">The context that some code is being executed in, referring to whichever variables and properties are available in that situation.</p>
+            <hr>
+            <p class="notes"><span class="yellow">function</span> doMath() {</p>
+            <p class="notes"><span class="yellow">var</span> x = 40;</p>
+            <p class="notes">console.log(<span class="yellow">x</span>)</p>
+            <p class="notes">}</p>
+            <hr>
+            <p class="notes">Trying to console.log(x) outside of the above function returns x is not defined, because the x is defined <span class="pink">within the scope of the function doMath()</span></p>
+            <p class="notes">adding an additional var within a function and renaming a global variable separates the two &rarr; need to practice this!!!</p>
+            <p class="pink">Anytime you define a new function it gets its own new scope, and it can access variables defined outside the function, but inside a function, any defined variables are inaccessible outside of the function</p>
+            <h3>HIGHER ORDER FUNCTIONS</h3>
+            <p class="notes">Functions that can either take other functions as arguments or return other functions &rarr; basix lines 468-472</p>
+            <h2>June 18th 11:14</h2>
+            <h2>ARRAYS</h2>
+            <p class="pink">Define and add and remove data to arrays</p>
+            <p class="pink">Use built in array methods to manipulate data and arrays</p>
+            <p class="pink">Simple to-do app with arrays and conditional logic</p>
+            <p class="notes">Ways to define arrays:</p>
+            <p class="notes"><span class="yellow">var</span> friends = [];</p>
+            <p class="notes"><span class="yellow">var</span> friends = <span class="yellow">new</span> <span class="pink">Array</span> ();</p>
+            <p class="notes">Arrays can hold any type of data</p>
+            <p class="notes">Arrays have a length property</p>
+            <p class="notes">Common Array Methods: push/pop, shift/unshift, indexOf, slice</p>
+            <p class="notes"><span class="pink">Array</span><span class="yellow">.push()</span> &rarr; adds item to the end of an array</p>
+            <p class="notes"><span class="pink">Array</span><span class="yellow">.pop()</span> &rarr; removes item from the end of an array</p>
+            <p class="notes"><span class="pink">Array</span><span class="yellow">.unshift()</span> &rarr; adds item to the beginning of an array</p>
+            <p class="notes"><span class="pink">Array</span><span class="yellow">.shift()</span> &rarr; removes item from the beginning of an array</p> 
+            <p class="notes"><span class="pink">Array</span><span class="yellow">.indexOf()</span> &rarr; find the index of an item in an array</p>
+            <p class="notes">If <span class="yellow">indexOf()</span> returns <span class="pink">-1</span> then we know an item is not in the array</p>
+            <p class="notes"><span class="pink">Array</span><span class="yellow">.slice(starting index, where slice should stop)</span> &rarr; copy parts of an array &rarr; basix lines 494-496</p>  
+            <br>
+            <h3>ARRAY PROBLEM SET</h3>
+            <hr>
+            <p class="notes"><span class="pink">var</span> nums = [7, 5, 6, 4, 10]</p>
+            <p class="notes">console.log(nums[nums.length])</p>
+            <p class="notes">above line becomes console.log(nums[5])</p>
+            <p class="notes">there is no index 5, so logs <span class="pink">undefined</span></p>
+            <hr>
+            <br>
+            <hr>
+            <p class="notes"><span class="pink">var</span> friendGroups = [</p>
+            <p class="notes">['Harry', 'Ron', 'Hermione'],</p>
+            <p class="notes">['Malfoy', 'Crabbe', 'Goyle'],</p>
+            <p class="notes">['Mooney', 'Wormtail', 'Prongs'],</p>
+            <p class="notes">];</p>
+            <p class="notes">console.log(friendGroups[2][0]</p>
+            <p class="notes"><span class="pink">Mooney</span> is the correct log &rarr; 2nd array &rarr; 1st (0) item</p>
+            <hr>
+            <br>
+            <h3>TODO LIST CODE ALONG</h3>
+            <p class="notes">located in list.js and list.html</p>
+            <h3>ARRAY ITERATION</h3>
+            <h3>objectives:</h3>
+            <p class="pink">Use a for loop to iterate over an array</p>
+            <p class="pink">Use forEach to iterate over an array</p>
+            <p class="pink">Compare and contrast for loops and forEach</p>
+            <p class="notes"></p>
         </div>
 
     </div>
