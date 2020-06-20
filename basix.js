@@ -502,3 +502,33 @@ console.log(strArray);
 var nums = [5, 7, 9, 10, 12];
 console.log(nums[nums.length]);
 console.log('ARRAY ITERATION');
+var colors = ['red', 'orange', 'yellow', 'green'];
+for(var i = 0; i < colors.length; i++) {
+    // alert(colors[i]);
+    console.log(colors[i]);
+}
+console.log('FOREACH');
+var colors = ['red', 'orange', 'yellow', 'green'];
+colors.forEach(function(color) {
+    console.log(color);
+});
+
+colors.forEach(function() {
+    console.log('inside the for each');
+});
+
+function printColor(color) {
+    console.log('*******************');
+    console.log(color);
+    console.log('*******************');
+};
+
+colors.forEach(printColor);
+printColor(colors[0]);
+
+console.log('WHILE ITERATION');
+var count = 0;
+while(count < colors.length) {
+    console.log(colors[count]);
+    count++;
+}
