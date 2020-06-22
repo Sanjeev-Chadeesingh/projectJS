@@ -534,8 +534,48 @@ while(count < colors.length) {
 }
 console.log('****************************')
 console.log('Array Problem Set');
-var exOne = [1, 2, 3, 4, 5];
+var exOne = [1, 2, 3, 7, 12, 77, 4, 5];
 var exTwo = ['apples', 'bananas', 'cucumbers', 'dates', 'eggplant'];
 var exThree = [1, 1, 1, 1, 1];
 var exFour = ['apple', 'apple', 'apple', 'apple', 'apple'];
+
+function printReverse(arr) {
+    for(var i = arr.length - 1; i >= 0; i--) {
+        console.log(arr[i]);
+    }
+}
+printReverse(exTwo);
+
+function isUniform(arr) {
+    var init = arr[0];
+    for(var i = 1; i < arr.length; i++) {
+        if(init !== arr[i]) {
+            return false;
+        }
+    }
+    return true;
+}
+console.log(isUniform(exOne));
+console.log(isUniform(exThree));
+
+function sumArray(arr) {
+    var count = 0;
+    for(var i = 0; i < arr.length; i++) {
+        count += arr[i];
+    }
+    return count;
+}
+console.log(sumArray(exOne));
+
+function max(arr) {
+    var biggest = arr[0];
+    for(var i = 1; i < arr.length; i++) {
+        if(arr[i] > biggest) {
+            biggest = arr[i];
+            
+        }
         
+    }
+    return biggest;
+}
+console.log(max(exOne));
