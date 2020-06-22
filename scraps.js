@@ -34,3 +34,25 @@
 
 // var dogs = ['Rusty', 'Wyatt', 'Ollie'];
 // console.log(dogs.length);
+var fruits = ['oranges', 'lemons', 'limes', 'pears', 'apples', 'peaches'];
+
+// for(var i = 0; i < fruits.length; i++) {
+//     console.log('Here, have some ' + fruits[i]);
+// }
+
+// var count = 0;
+// while(count < fruits.length) {
+//     console.log('Here, have some ' + fruits[count]);
+//     count++;
+// }
+
+// fruits.forEach(function(fruit) {
+//     console.log('Here, have some ' + fruit);
+// });
+console.log(fruits);
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var colors = ['red', 'orange', 'yellow', 'green'];
+
+numbers.forEach(function(el, i, arr) {
+    console.log(el, i, arr);
+})

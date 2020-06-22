@@ -532,3 +532,10 @@ while(count < colors.length) {
     console.log(colors[count]);
     count++;
 }
+console.log('****************************')
+console.log('Array Problem Set');
+var exOne = [1, 2, 3, 4, 5];
+var exTwo = ['apples', 'bananas', 'cucumbers', 'dates', 'eggplant'];
+var exThree = [1, 1, 1, 1, 1];
+var exFour = ['apple', 'apple', 'apple', 'apple', 'apple'];
+        
