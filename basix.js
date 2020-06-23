@@ -592,4 +592,186 @@ function myForEach(arr, func) {
     }
 }
 var colors = ['red', 'orange', 'yellow'];
-myForEach(colors, alert);
+
+myForEach(colors, function(color){
+    console.log(color);
+});
+
+Array.prototype.myForEach = function(func) {
+    for(var i = 0; i < this.length; i++) {
+        func(this[i]);
+    }
+}
+
+var friends = ['Charlie', 'Dave', 'Matty', 'Caitlin'];
+friends.myForEach(function(name) {
+    console.log('I love ' + name);
+});
+
+// (function() {
+//     alert('Hiyah There!');
+// })();
+
+console.log('================================================');
+console.log('================================================');
+console.log('OBJECTS COLT');
+
+var dog = {
+    name: 'Ellis',
+    breed: 'Lab',
+    age: 1
+};
+dog.age += 1;
+console.log(dog);
+dog.name = 'Neckbone';
+console.log(dog);
+dog['name'] = 'Ellis';
+console.log(dog);
+
+console.log('Arrays vs Objects');
+var dogs = ['Rusty', 'Lucky', 'Bubba'];
+console.log(dogs[1]);
+
+var dog = {
+    name: 'Bubba',
+    breed: 'Lab'
+}
+console.log(dog.name);
+dog.age = 2;
+console.log(dog);
+dog.breed = 'Black Lab';
+console.log(dog);
+console.log('************************');
+console.log('COLT NESTED ARRAYS AND OBJECTS');
+var posts = [
+    {
+        title: 'Cats are mediocre',
+        author: 'Colt',
+        comments: ['Awesome post', 'Terrible post']
+    },
+
+    {
+        title: 'Cats are actually awesome',
+        author: 'Cat Luvr',
+        comments: ['<3', 'go to hell i hate you']
+    }
+]
+console.log(posts);
+console.log(posts[0].title);
+console.log(posts[1].comments[1]);
+
+var someObject = {
+    friends: [
+        {name: 'Malfoy'},
+        {name: 'Crabbe'},
+        {name: 'Goyle'}
+    ],
+    color: 'baby blue',
+    isEvil: true
+};
+console.log(someObject.friends[0].name);
+
+var movies = [
+    desperado = {
+        title: 'Desperado',
+        rating: '4 stars',
+        hasWatched: true
+    },
+    insideOut = {
+        title: 'Inside Out',
+        rating: '5 stars',
+        hasWatched: true
+    },
+    darkKnight = {
+        title: 'The Dark Knight',
+        rating: '4 stars',
+        hasWatched: true
+    },
+    crazyRichAsians = {
+        title: 'Crazy Rich Asians',
+        rating: '3 stars',
+        hasWatched: false
+    }
+]
+// for(var i = 0; i < movies.length; i++) {
+//     if(movies[i].hasWatched === true) {
+//         var seen = 'You have watched ';
+//         movies[i].watch = seen;
+//     } else if(movies[i].hasWatched === false) {
+//         var unseen = 'You have not seen ';
+//         movies[i].watch = unseen;
+//     }
+//     console.log(movies[i].watch + '' + movies[i].title + ' - ' + movies[i].rating);
+// }
+// movies.forEach(function(movie) {
+//     var result = 'You have ';
+//     if(movie.hasWatched) {
+//         result += 'watched ';
+//     } else {
+//         result += 'not seen ';
+//     }
+//     result += "\"" + movie.title + "\" - ";
+//     result += movie.rating;
+//     console.log(result);
+// });
+function buildString(movie) {
+    var result = 'You have ';
+    if(movie.hasWatched) {
+        result += 'watched ';
+    } else {
+        result += 'not seen ';
+    }
+    result += "\"" + movie.title + "\" - ";
+    result += movie.rating;
+    return result;
+}
+movies.forEach(function(movie) {
+    console.log(buildString(movie));
+});
+console.log('********************');
+console.log('Object Methods');
+var obj = {
+    name: 'Chuck',
+    age: 45,
+    isCool: false,
+    friends: ['bob', 'tina'],
+    add: function(x, y) {
+        return x + y;
+    }
+};
+console.log(obj.add(10, 5));
+
+function speak() {
+    return 'WOOF!';
+}
+
+function speak() {
+    return 'MEOW!';
+}
+
+var dogSpace = {};
+dogSpace.speak = function() {
+    return 'WOOF!';
+}
+
+var catSpace = {};
+catSpace.speak = function() {
+    return 'MEOW!';
+}
+
+dogSpace.speak();
+catSpace.speak();
+
+var comments = {};
+comments.data = ['Yay', 'Good job', 'Hi', 'Bye'];
+function print(arr) {
+    arr.forEach(function(el) {
+        console.log(el);
+    });
+}
+comments.print = function print() {
+    this.data.forEach(function(el) {
+        console.log(el);
+    });
+}
+comments.print();

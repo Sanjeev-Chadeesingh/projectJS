@@ -58,3 +58,36 @@ var fruits = ['oranges', 'lemons', 'limes', 'pears', 'apples', 'peaches'];
 // })
 
 console.log('hiyah there!!');
+var movies = [
+    desperado = {
+        title: '"Desperado"',
+        rating: '4 stars',
+        hasWatched: true
+    },
+    insideOut = {
+        title: '"Inside Out"',
+        rating: '5 stars',
+        hasWatched: true
+    },
+    darkKnight = {
+        title: '"The Dark Knight"',
+        rating: '4 stars',
+        hasWatched: true
+    },
+    crazyRichAsians = {
+        title: '"Crazy Rich Asians"',
+        rating: '3 stars',
+        hasWatched: false
+    }
+]
+
+for(var i = 0; i < movies.length; i++) {
+    if(movies[i].hasWatched === true) {
+        var seen = 'You have watched ';
+        movies[i].watch = seen;
+    } else if(movies[i].hasWatched === false) {
+        var unseen = 'You have not seen ';
+        movies[i].watch = unseen;
+    }
+    console.log(movies[i].watch + '' + movies[i].title + ' - ' + movies[i].rating);
+}
