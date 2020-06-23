@@ -49,10 +49,12 @@ var fruits = ['oranges', 'lemons', 'limes', 'pears', 'apples', 'peaches'];
 // fruits.forEach(function(fruit) {
 //     console.log('Here, have some ' + fruit);
 // });
-console.log(fruits);
-var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-var colors = ['red', 'orange', 'yellow', 'green'];
+// console.log(fruits);
+// var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// var colors = ['red', 'orange', 'yellow', 'green'];
 
-numbers.forEach(function(el, i, arr) {
-    console.log(el, i, arr);
-})
+// numbers.forEach(function(el, i, arr) {
+//     console.log(el, i, arr);
+// })
+
+console.log('hiyah there!!');

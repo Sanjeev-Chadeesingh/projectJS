@@ -534,6 +534,7 @@ while(count < colors.length) {
 }
 console.log('****************************')
 console.log('Array Problem Set');
+// 1-
 var exOne = [1, 2, 3, 7, 12, 77, 4, 5];
 var exTwo = ['apples', 'bananas', 'cucumbers', 'dates', 'eggplant'];
 var exThree = [1, 1, 1, 1, 1];
@@ -547,35 +548,48 @@ function printReverse(arr) {
 printReverse(exTwo);
 
 function isUniform(arr) {
-    var init = arr[0];
+    var testCase = arr[0];
     for(var i = 1; i < arr.length; i++) {
-        if(init !== arr[i]) {
+        if(testCase !== arr[i]) {
             return false;
         }
     }
     return true;
 }
-console.log(isUniform(exOne));
-console.log(isUniform(exThree));
+console.log(isUniform(exTwo));
+console.log(isUniform(exFour));
 
 function sumArray(arr) {
-    var count = 0;
-    for(var i = 0; i < arr.length; i++) {
-        count += arr[i];
-    }
-    return count;
+    var initSum = 0;
+    arr.forEach(function(el) {
+        initSum += el;
+    })
+    return initSum;
 }
 console.log(sumArray(exOne));
 
 function max(arr) {
-    var biggest = arr[0];
-    for(var i = 1; i < arr.length; i++) {
-        if(arr[i] > biggest) {
-            biggest = arr[i];
-            
-        }
-        
-    }
-    return biggest;
+   var maxim = arr[0];
+   for(var i = 1; i < arr.length; i++) {
+       if(arr[i] > maxim) {
+           maxim = arr[i];
+       }
+   }
+   return maxim;
 }
 console.log(max(exOne));
+console.log('*******************')
+console.log('COLT ARRAYS IN DEPTH');
+var nums = [45, 65, 77, 34];
+
+nums.forEach(function(num) {
+    console.log(num);
+})
+
+function myForEach(arr, func) {
+    for(var i = 0; i < arr.length; i++) {
+        func(arr[i]);
+    }
+}
+var colors = ['red', 'orange', 'yellow'];
+myForEach(colors, alert);
