@@ -775,3 +775,142 @@ comments.print = function print() {
     });
 }
 comments.print();
+
+console.log('================================================');
+console.log('================================================');
+console.log('JONAS: OBJECTS+LOOPS');
+
+// var sanjeev = {
+//     firstName: 'Sanjeev',
+//     lastName: 'Chadeesingh',
+//     birthYear: 1984,
+//     family: ['Kamal', 'Alice', 'Sanjay', 'Shanti'],
+//     job: 'coder',
+//     isMarried: false
+// };
+
+// console.log(sanjeev);
+// console.log(sanjeev.firstName);
+// console.log(sanjeev['family']);
+// sanjeev.job = 'designer';
+// sanjeev['isMarried'] = true;
+// console.log(sanjeev);
+console.log('METHODS WITHIN OBJECTS')
+
+// var sanjeev = {
+//     firstName: 'Sanjeev',
+//     lastName: 'Chadeesingh',
+//     birthYear: 1984,
+//     family: ['Kamal', 'Alice', 'Sanjay', 'Shanti'],
+//     job: 'coder',
+//     isMarried: false,
+//     calcAge: function(birthYear) {
+//         return 2020 - birthYear;
+//     }
+// };
+
+var sanjeev = {
+    firstName: 'Sanjeev',
+    lastName: 'Chadeesingh',
+    birthYear: 1984,
+    family: ['Kamal', 'Alice', 'Sanjay', 'Shanti'],
+    job: 'coder',
+    isMarried: false,
+    calcAge: function() {
+        this.age = 2020 - this.birthYear;
+    }
+};
+sanjeev.calcAge();
+console.log(sanjeev);
+console.log('Jonas Coding Challenge 4');
+
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    mass: 70,
+    height: 1.65,
+    calcBMI: function() {
+        this.BMI = this.mass / (this.height * this.height);
+        return this.BMI;
+    }
+};
+
+var mark = {
+    firstName: 'Mark',
+    lastName: 'Johnson',
+    mass: 110,
+    height: 2.15,
+    calcBMI: function() {
+        this.BMI = this.mass / (this.height * this.height);
+        return this.BMI;
+    }
+};
+
+john.calcBMI();
+mark.calcBMI();
+
+// console.log(john);
+// console.log(mark);
+
+if(john.BMI > mark.BMI) {
+    console.log('John\'s BMI is greater, at: ' + john.BMI);
+} else if(mark.BMI > john.BMI) {
+    console.log('Mark\'s BMI is greater, at: ' + mark.BMI);
+} else {
+    console.log('The BMI\'s are the same!');
+};
+
+console.log('***********************');
+console.log('JONAS LOOPS AND ITERATION');
+
+// for(var i = 0; i < 10; i++) {
+//     console.log('The number ' + i);
+// };
+
+console.log('For Loop Iteration');
+var connell = ['Connell', 'Gonzalez', 1984, 'coder', false, 'red'];
+
+// for(var i = 0; i < connell.length; i++) {
+//     if(typeof connell[i] !== 'string') continue;
+//     console.log(connell[i]);
+// };
+
+// for(var i = 0; i < connell.length; i++) {
+//     if(typeof connell[i] !== 'string') break;
+//     console.log(connell[i]);
+// };
+
+for(var i = connell.length - 1; i >= 0; i--) {
+    console.log(connell[i]);
+}
+
+// console.log('While Loop Iteration');
+// var i = 0;
+// while(i < connell.length) {
+//     console.log(john[i]);
+//     i++;
+// };
+console.log('*****************************');
+console.log('Coding Challenge 5 with Jonas');
+
+var john = {
+    name: 'John',
+    bills: [124, 48, 268, 180, 42],
+    tipCalc: function() {
+        this.tips = [];
+        this.totals = [];
+        for(var i = 0; i < this.bills.length; i++) {
+            if(this.bills[i] < 50) {
+                tip = .2;
+            } else if(this.bills[i] >= 50 && this.bills[i] <= 200) {
+                tip = .15;
+            } else {
+                tip = .1;
+            }
+            this.tips.push(this.bills[i] * tip);
+            this.totals.push((this.bills[i] * tip) + this.bills[i]);
+        }
+    }
+};
+john.tipCalc();
+console.log(john);
