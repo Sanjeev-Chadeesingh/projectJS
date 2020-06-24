@@ -892,7 +892,6 @@ for(var i = connell.length - 1; i >= 0; i--) {
 // };
 console.log('*****************************');
 console.log('Coding Challenge 5 with Jonas');
-
 var john = {
     name: 'John',
     bills: [124, 48, 268, 180, 42],
