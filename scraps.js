@@ -113,3 +113,16 @@ var fruits = ['oranges', 'lemons', 'limes', 'pears', 'apples', 'peaches'];
 // };
 // john.tipCalc();
 // console.log(john);
+console.log('Hiyah there!');
+var exOne = [1, 2, 3, 77, 4, 5];
+var exTwo = ['apples', 'bananas', 'corn', 'dip', 'eggs'];
+var exThree = [1, 1, 1, 1, 1];
+var exFour = ['apples', 'apples', 'apples','apples', 'apples'];
+var exFive = [2, 2, 2, 3];
+
+function reverser(arr) {
+    for(var i = arr.length - 1; i >= 0; i--) {
+        console.log(arr[i]);
+    }
+}
+reverser(exTwo);
