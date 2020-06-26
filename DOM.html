@@ -8,15 +8,74 @@
 </head>
 <body>
     <div class="container">
+
+
         <h1 class="banner">DA DOM</h1>
         <div class="june26">
             <h2>Intro to the DOM</h2>
-            <p class="notes">These are some notes</p>
+            <h3 class="white">June 26th 10:20</h3>
+            <p class="notes">Document Object Model</p>
+            <ul><span class="pink">DOM Examples</span>
+                <li>Games</li>
+                <li>Scrolling Effects</li>
+                <li>Dropdown Menus</li>
+                <li>Form Validations</li>
+                <li>Interactivity</li>
+                <li>Animations</li>
+                <li>Every awesome site ever</li>
+            </ul>
+            <p class="notes">Document Object Model</p>
+            <p class="notes">The interface between your Javascript and HTML+CSS</p>
+            <p class="notes">The browser turns every HTML tag into a JS object we can manipulate</p>
+            <p class="notes">Everything (html+css) is stored inside of the <span class="pink">document</span> object, it's the root node everything lives inside of</p>
+            <h3>THE PROCESS</h3>
+            <p>SELECT and element and then MANIPULATE</p>
+            <p class="notes">A model of everything on the page</p>
+            <hr> <br>
+            <h3>DOM SELECTORS</h3>
+            <p class="notes">Different ways of selecting elements</p>
+            <p class="notes">Remember, everything lives inside the document!</p>
+            <p class="notes">It is the top level object!</p>
+            <p class="notes">Exercise on Chrome:</p>
+            <ul>
+                <li>document.URL;</li>
+                <li>document.head;</li>
+                <li>document.body;</li>
+                <li>document.links;</li>
+            </ul>
+            <p>METHODS:</p>
+            <ul>
+                <li class="pink">document.getElementById()</li>
+                <li class="notes">call method, pass single string argument (id name wanted), it goes and finds element and returns object representation to us</li>
+                <li class="pink">document.getElementsByClassName()</li>
+                <li class="notes">takes a string argument and returns a list of elements that have a matching class</li>
+                <li class="pink">document.getElementsByTagName()</li>
+                <li class="notes">Returns a list of all elements of a given tag name, even if there's only one item in the list</li>
+                <li class="pink">document.querySelector()</li>
+                <li class="notes">Returns the first element that matches a given CSS-style selector. Newer, and does what the ones above do. Always only returns one element</li>
+                <li class="pink">document.querySelectorAll()</li>
+                <li class="notes">Returns a list of elements that matches a given CSS-style selector</li>
+            </ul>
+            <br> <hr>
+            <div class="exOne">
+                <h1>DOM Manipulation Exercise &rarr; DOM.js lines 22-</h1>
+                <h1 class="exOneA">Hello</h1>
+                <h1 class="exOneA">Goodbye</h1>
+                <ul>
+                    <li id="highlight">List Item 1</li>
+                    <li class="bolded">List Item 2</li>
+                    <li class="bolded">List Item 3</li>
+                </ul>
+            </div>
+            <hr>
+
         </div>
+
+
     </div>
    
 
 
-    <script src="DOM.js"></script>
+<script src="DOM.js"></script>
 </body>
 </html>

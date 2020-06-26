@@ -33,6 +33,10 @@ body {
     color: pink;
 }
 
+.white {
+    color: white;
+}
+
 .june26 {
     border: 1px solid yellowgreen;
     line-height: 1.5;
